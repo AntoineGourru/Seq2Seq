@@ -1,0 +1,7 @@
+Sans dropout; sans la couche tanh
+
+<S> i 'm a little drunk . </S>
+je suis un peu en colère . </S> 
+<S> you ate my sandwich . </S>
+vous avez mangé mon petit déjeuner . </S> 
+
