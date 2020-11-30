@@ -335,7 +335,7 @@ def compute_apply_gradients(model,loss_f,x,x_mask,y,y_mask,optimizer):
 # In[10]:
 
 
-batch_size = 128
+batch_size = 64
 
 X = np.hstack([ang_tok,ang_mask])
 print(X.shape)
@@ -390,7 +390,7 @@ te_acc = []
 # In[20]:
 
 
-epochs = 30
+epochs = 100
 #Source : https://www.tensorflow.org/tutorials/text/transformer    
 class CustomSchedule(tf.keras.optimizers.schedules.LearningRateSchedule):
     def __init__(self, d_model, warmup_steps=4000):
