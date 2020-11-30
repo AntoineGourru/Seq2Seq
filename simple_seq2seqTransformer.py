@@ -284,7 +284,7 @@ class S2S(tf.keras.Model):
 #@tf.function
 def mask_pred(mask,pos):
     
-    pred_mask = tf.ones((mask.shape[0],pos),dtype=tf.dtypes.int32)
+    pred_mask = tf.ones((mask.shape[0],pos),dtype=tf.dtypes.int64)
 
     paddings = tf.constant([[0, 0], [0, mask.shape[1]-pos]])
     
