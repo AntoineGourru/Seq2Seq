@@ -418,12 +418,6 @@ checkpoint_prefix = os.path.join(checkpoint_dir, "ckpt")
 checkpoint = tf.train.Checkpoint(optimizer=optimizer,
                                  model=model)
 
-import matplotlib.pyplot as plt
-
-plt.plot(learning_rate(tf.range(4000, dtype=tf.float32)))
-plt.ylabel("Learning Rate")
-plt.xlabel("Train Step")
-
 
 # ### Training
 
