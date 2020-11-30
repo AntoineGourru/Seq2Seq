@@ -335,7 +335,7 @@ def compute_apply_gradients(model,loss_f,x,x_mask,y,y_mask,optimizer):
 # In[10]:
 
 
-batch_size = 32
+batch_size = 16
 
 X = np.hstack([ang_tok,ang_mask])
 print(X.shape)
